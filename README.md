@@ -379,16 +379,6 @@ Blindness-Detection-Deep-Learning/
 
 3. **Apply advanced class imbalance strategies** — SMOTE-based image oversampling, ADASYN, or weighted sampling to better handle the Severe DR class (only 144 training images).
 
-4. **Implement Grad-CAM visualizations** — Generate class activation heatmaps to highlight which retinal regions drive each prediction, improving clinical interpretability and trust.
-
-5. **Incorporate retinal-specific preprocessing** — Apply Ben Graham's preprocessing (green channel extraction, CLAHE, circular crop) which has been shown to significantly boost DR detection performance.
-
-6. **Train on the full Kaggle dataset** — Augment with the full 3,662+ images and external datasets (e.g., EyePACS, IDRiD) to improve generalization.
-
-7. **Ordinal classification** — Experiment with ordinal loss functions (DR severity is inherently ordered: 0 < 1 < 2 < 3 < 4), which may reduce clinically costly rank-skipping errors.
-
-8. **Model deployment** — Package the ResNet50 model as a REST API (Flask/FastAPI) or a lightweight mobile application for point-of-care use.
-
 ---
 
 ## 📚 References
