@@ -358,13 +358,14 @@ Blindness-Detection-Deep-Learning/
 │   ├── val_data.csv                   # Validation labels
 │   └── test_data.csv                  # Test labels
 │
-├── Notebooks/
+├── Notebook/
 │   ├── Project_7_Blindness_Detection_EDA.ipynb            # Exploratory Data Analysis
 │   ├── Project_7_Blindness_Detection_MLP_Model.ipynb      # MLP Model
 │   ├── Project_7_Blindness_Detection_CNN_Part1.ipynb      # Custom CNN Model
 │   └── Project_7_Blindness_Detection_CNN_Part2.ipynb      # ResNet50 Transfer Learning
 │
-├── Project_Report__Bindness_Detection.pdf                 # Full project report
+├── Report/
+│   ├── Project_Report__Bindness_Detection.pdf                 # Full project report
 └── README.md
 ```
 
