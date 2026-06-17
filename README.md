@@ -387,3 +387,16 @@ Blindness-Detection-Deep-Learning/
 - [NIH — Diabetic Retinopathy](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/diabetic-retinopathy)
 - He, K., et al. (2016). *Deep Residual Learning for Image Recognition.* CVPR.
 - Gulshan, V., et al. (2016). *Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs.* JAMA.
+
+---
+
+## Author
+
+**Reemika Subrata Das**
+
+- GitHub: [@reemikadas](https://github.com/reemikadas)
+- LinkedIn: [linkedin.com/in/reemikadas](https://www.linkedin.com/in/reemikadas)
+- Email: das.reemika@gmail.com
+
+---
+
