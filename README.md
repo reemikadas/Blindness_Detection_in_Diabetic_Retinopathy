@@ -160,11 +160,11 @@ Performed in `Project_7_Blindness_Detection_EDA.ipynb`:
 All images were resized to **224×224 pixels** and processed through `ImageDataGenerator`:
 
 **Training set augmentations:**
-- Rotation (up to 20°–40°)
-- Width & height shifts (±5%)
-- Shear transformation (±5%)
-- Zoom (±20%)
-- Horizontal flipping
+- Rotation (up to 20°–40°) — randomly rotates images to simulate different camera angles
+- Width & height shifts (±5%) — slightly translates images horizontally/vertically to reduce positional bias
+- Shear transformation (±5%) — applies a tilt/slant effect to increase geometric variety
+- Zoom (±20%) — randomly zooms in or out to mimic varying image scales
+- Horizontal flipping — mirrors images left-to-right to double effective training data
 
 **Validation & test sets:** Rescaling only (no augmentation)
 
@@ -178,14 +178,7 @@ All images were resized to **224×224 pixels** and processed through `ImageDataG
 
 **Architecture:**
 
-| Layer                  | Output Shape    | Parameters    |
-|------------------------|-----------------|---------------|
-| Flatten                | (None, 150,528) | 0             |
-| Dense (512) + BN + DO  | (None, 512)     | 77,073,920    |
-| Dense (256) + BN + DO  | (None, 256)     | 131,328       |
-| Dense (128) + BN + DO  | (None, 128)     | 32,896        |
-| Dense (5) — Softmax    | (None, 5)       | 645           |
-| **Total**              |                 | **77,239,301**|
+![MLP Architecture](mlp_architecture.png)
 
 **Configuration:**
 - Optimizer: Adam (lr=0.001)
@@ -202,16 +195,7 @@ All images were resized to **224×224 pixels** and processed through `ImageDataG
 
 **Architecture:**
 
-| Layer                        | Output Shape       | Parameters   |
-|------------------------------|--------------------|--------------|
-| Conv2D (128, 3×3) + MaxPool  | (112, 112, 128)    | 3,584        |
-| Conv2D (256, 3×3) + MaxPool  | (56, 56, 256)      | 295,168      |
-| Conv2D (512, 3×3) + MaxPool  | (28, 28, 512)      | 1,180,160    |
-| Flatten                      | (None, 401,408)    | 0            |
-| Dense (128) — ReLU           | (None, 128)        | 51,380,352   |
-| Dense (64) — ReLU            | (None, 64)         | 8,256        |
-| Dense (5) — Softmax          | (None, 5)          | 325          |
-| **Total**                    |                    | **52,867,845**|
+![CNN Architecture](cnn_architecture.png)
 
 **Configuration:**
 - Optimizer: Adam (lr=0.001)
@@ -228,16 +212,7 @@ All images were resized to **224×224 pixels** and processed through `ImageDataG
 
 **Architecture:**
 
-| Component                     | Details                                         |
-|-------------------------------|-------------------------------------------------|
-| Base Model                    | ResNet50 (ImageNet weights, top excluded)       |
-| Feature Extraction Mode       | All convolutional layers **frozen**             |
-| Feature Output                | 100,352 features (after Flatten)                |
-| Dense (256) — ReLU + Dropout  | Trainable fully-connected head                  |
-| Dense (5) — Softmax           | 5-class output                                  |
-| **Trainable Parameters**      | **25,691,653**                                  |
-| **Non-Trainable Parameters**  | 23,587,712                                      |
-| **Total Parameters**          | **49,279,365**                                  |
+![ResNet50 CNN Architecture](resnet_architecture.png)
 
 **Configuration:**
 - Optimizer: Adam (lr=0.0001) — lower LR for fine-tuning stability
