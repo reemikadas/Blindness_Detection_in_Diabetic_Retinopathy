@@ -333,13 +333,14 @@ Blindness-Detection-Deep-Learning/
 │   ├── val_data.csv                   # Validation labels
 │   └── test_data.csv                  # Test labels
 │
-├── Notebooks/
+├── Notebook/
 │   ├── Project_7_Blindness_Detection_EDA.ipynb            # Exploratory Data Analysis
 │   ├── Project_7_Blindness_Detection_MLP_Model.ipynb      # MLP Model
 │   ├── Project_7_Blindness_Detection_CNN_Part1.ipynb      # Custom CNN Model
 │   └── Project_7_Blindness_Detection_CNN_Part2.ipynb      # ResNet50 Transfer Learning
 │
-├── Project_Report__Bindness_Detection.pdf                 # Full project report
+├── Report/
+│   ├── Project_Report__Bindness_Detection.pdf                 # Full project report
 └── README.md
 ```
 
@@ -353,16 +354,6 @@ Blindness-Detection-Deep-Learning/
 
 3. **Apply advanced class imbalance strategies** — SMOTE-based image oversampling, ADASYN, or weighted sampling to better handle the Severe DR class (only 144 training images).
 
-4. **Implement Grad-CAM visualizations** — Generate class activation heatmaps to highlight which retinal regions drive each prediction, improving clinical interpretability and trust.
-
-5. **Incorporate retinal-specific preprocessing** — Apply Ben Graham's preprocessing (green channel extraction, CLAHE, circular crop) which has been shown to significantly boost DR detection performance.
-
-6. **Train on the full Kaggle dataset** — Augment with the full 3,662+ images and external datasets (e.g., EyePACS, IDRiD) to improve generalization.
-
-7. **Ordinal classification** — Experiment with ordinal loss functions (DR severity is inherently ordered: 0 < 1 < 2 < 3 < 4), which may reduce clinically costly rank-skipping errors.
-
-8. **Model deployment** — Package the ResNet50 model as a REST API (Flask/FastAPI) or a lightweight mobile application for point-of-care use.
-
 ---
 
 ## 📚 References
@@ -371,3 +362,16 @@ Blindness-Detection-Deep-Learning/
 - [NIH — Diabetic Retinopathy](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/diabetic-retinopathy)
 - He, K., et al. (2016). *Deep Residual Learning for Image Recognition.* CVPR.
 - Gulshan, V., et al. (2016). *Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs.* JAMA.
+
+---
+
+## Author
+
+**Reemika Subrata Das**
+
+- GitHub: [@reemikadas](https://github.com/reemikadas)
+- LinkedIn: [linkedin.com/in/reemikadas](https://www.linkedin.com/in/reemikadas)
+- Email: das.reemika@gmail.com
+
+---
+
