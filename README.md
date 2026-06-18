@@ -365,13 +365,13 @@ Blindness-Detection-Deep-Learning/
 
 ---
 
-## Author
+## 👩‍💻 Author
 
 **Reemika Subrata Das**
 
-- GitHub: [@reemikadas](https://github.com/reemikadas)
-- LinkedIn: [linkedin.com/in/reemikadas](https://www.linkedin.com/in/reemikadas)
-- Email: das.reemika@gmail.com
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-reemikadas-blue?logo=linkedin&style=flat)](https://linkedin.com/in/reemikadas)
+[![GitHub](https://img.shields.io/badge/GitHub-reemikadas-black?logo=github&style=flat)](https://github.com/reemikadas)
+[![Email](https://img.shields.io/badge/Email-das.reemika%40gmail.com-red?logo=gmail&style=flat)](mailto:das.reemika@gmail.com)
 
 ---
 
